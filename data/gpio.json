@@ -1,0 +1,36 @@
+[
+    {
+        "id":"GPIO_INFRA_RED",
+        "name": "TV Remote",
+        "description":"Web TV Remote",
+        "pin":"5",
+        "favourites": [
+            {
+                "id":101,
+                "name":"BBC ONE HD",
+                "image": "channels/bbc_one.png"
+            },
+            {
+                "id":102,
+                "name":"BBC TWO HD",
+                "image": "channels/bbc_two.png"
+            },
+            {
+                "id":105,
+                "name":"BBC THREE HD",
+                "image": "channels/bbc_three.png"
+            },
+            {
+                "id":104,
+                "name":"BBC FOUR HD",
+                "image": "channels/bbc_four.png"
+            }
+        ]
+    },
+    {
+        "id":"GPIO_TEMPERATURE_SENSOR",
+        "name": "Temperature Sensor",
+        "description":"Live Temperature Reader",
+        "pin":"15"
+    }
+]

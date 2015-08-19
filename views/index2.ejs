@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="<%= hostname %>/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="<%= hostname %>/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="<%= hostname %>/js/bootstrap.min.js"></script>
+
+        <!-- Load Application Classes -->
+        <script src="<%= hostname %>/js/app/Main.js"></script>
+        <script src="<%= hostname %>/js/app/actionbinders/BaseActionBinder.js"></script>
+        <script src="<%= hostname %>/js/app/actionbinders/ActionBinderFactory.js"></script>
+        <script src="<%= hostname %>/js/app/panels/Panel.js"></script>
+        <script src="<%= hostname %>/js/app/utils/GPIO.js"></script>
+        <script src="<%= hostname %>/js/app/sockets/Socket.js"></script>
+        <script src="<%= hostname %>/js/app/viewholders/BaseViewHolder.js"></script>
+        <script src="<%= hostname %>/js/app/viewholders/ViewHolderFactory.js"></script>
+
+        <style>
+            body {
+                background: #eee;
+                padding-top: 60px;
+                padding-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body role="document">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MONZOmote</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Signed in as <b><%= username %></b></a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">Admin</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+            </div>
+        </div>
+        <script type="application/javascript">
+            //var main = new Main();
+            //main.init(JSON.parse('<%- gpio %>'));
+
+            var socket = new Socket();
+            socket.init();
+        </script>
+    </body>
+</html>
